@@ -39,7 +39,7 @@ Reference fasta not provided, select apropriate tRNA adaptiveness file
 perl new_codonbias.pl YOUR_REF.fa tRNA_adaptiveness_SPECIES.txt coding_renamed_one_iso.bed output_tAI_per_codon.txt > gene_tAI.tsv
 ```
 
-### Step 3: Select top 10% expressed genes for cAI calculation 
+### Step 3: Calculate cAI (codon adaptation index, Sharp 1987)
 
 Run this R script to identify the top 10% expressed genes and get the input files for calculating cAI. Depends on the codon output generated in step 2.
 
