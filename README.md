@@ -48,5 +48,5 @@ Run this R script to identify the top 10% expressed genes and get the input file
 Rscript source_step3.R table_AA.txt YOUR_GENE_EXPRESSION.tsv output_tAI_per_codon.txt
 ```
 ```
-perl ~/bin/new_codonbias.pl YOUR_REF.fa cAI.tsv coding_renamed_one_iso.bed coding_output_cAI_per_codon > human_gene_cAI.tsv
+perl ~/bin/new_codonbias.pl YOUR_REF.fa cAI.tsv coding_renamed_one_iso.bed output_cAI_per_codon.txt > gene_cAI.tsv
 ```
