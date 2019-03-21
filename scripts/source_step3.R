@@ -8,7 +8,7 @@ genes = read.table(args[2], header = T, stringsAsFactors = F, row.names = 1)
 genes$max = apply(genes,1,max)
 #summary(genes$max)
 #quantile(genes$max, seq(0,1,0.1))
-top10 = rownames(expressed[expressed$max>=quantile(expressed$max, 0.9),])
+top10 = rownames(genes[genes$max>=quantile(genes$max, 0.9),])
 write.table(top10,"top_expressed_genes", row.names = F, quote = F, col.names = F)
 ### Codon input
 codons = read.table(args[3], stringsAsFactors = F)
