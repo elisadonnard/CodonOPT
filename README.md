@@ -22,9 +22,10 @@ ACTB_NM_001101  N N N N N
 ### Step 1: Select highest expressed isoform
 
 Run this script to select the isoform with highest expression for each gene. All the reference files needed for human and mouse are in the respective folders.
+Note: the reference annotation files contain the CDS regions only of the coding genes
 
 ```
-source_step1.bash YOUR_ISOFORM_EXP.tsv YOUR_REFERENCE.bed GENE_NAME_REF CODING_GENES
+source_step1.bash YOUR_ISOFORM_EXP.tsv YOUR_CDS_REFERENCE.bed GENE_NAME_REF
 ```
 the output will be a file named coding_renamed_one_iso.bed
 
